@@ -9,7 +9,7 @@
             "request": "launch",
             "type": "pwa-chrome",
             "url": "http://localhost:8080",
-            "webRoot": "${executar}"
+            "webRoot": "${workspaceFolder}"
         },
         
         {
@@ -17,7 +17,7 @@
             "port": 9222,
             "request": "attach",
             "type": "pwa-chrome",
-            "webRoot": "${executar}"
+            "webRoot": "${workspaceFolder}"
         },
         {
             "type": "pwa-chrome",
