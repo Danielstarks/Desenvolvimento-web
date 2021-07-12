@@ -4,13 +4,20 @@
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${executar}"
+        },
         
         {
             "name": "Attach to Chrome",
-            "port": 3000,
+            "port": 9222,
             "request": "attach",
             "type": "pwa-chrome",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${executar}"
         },
         {
             "type": "pwa-chrome",
