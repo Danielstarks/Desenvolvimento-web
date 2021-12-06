@@ -1,7 +1,7 @@
 body{
     width: 95%;
     margin: auto;
-    background-color: url(fd.jpg);
+    background-color: url("fd.jpg");
 
     font-family: sans-serif;
 
