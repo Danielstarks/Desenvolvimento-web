@@ -1,9 +1,73 @@
-body{
-    width: 95%;
+ body, ul, li, p{
+    
+   list-style: none;
+   font-size: 1.2rem;
+   padding: 0px;
+   margin: 0px;
+ 
+
+    width: 100%;
     margin: auto;
-    background-color: url(https://img.freepik.com/vetores-gratis/fundo-abstrato-colorido_23-2148807053.jpg?size=626&ext=jpg);
+    background: url(img/fd.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
 
     font-family: sans-serif;
+    color: white;
+}
+
+a{
+
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    text-align:center ;
+    margin-top: 100px;
+}
+
+img{
+    max-width: 50%;
+    display: block;
+}
 
 
+
+header{
+
+    background: rgb(176, 0, 211);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 20px;
+}
+
+menu{
+
+    display: flex;
+
+
+}
+
+menu li{
+    margin-left: 10px ;
+}
+
+menu li a{
+    display: block;
+    padding: 10px;
+
+}
+
+.flex{
+    display:flex;
+}
+
+.flex > div {
+    flex: 1 1 200px;
 }
