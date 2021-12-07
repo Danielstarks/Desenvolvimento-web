@@ -18,6 +18,11 @@ h1{
     margin-top: 100px;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
 .header {
     background: black;
     display:flex;
@@ -46,3 +51,11 @@ display: flex;
 }
 /*CSS FLEXBOX */
 
+ .flex{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .flex > div{
+     flex: 1 1 200px ;
+ }
