@@ -19,7 +19,7 @@ h1{
 }
 
 img{
-    max-width: 100%;
+    max-width: 3%;
     display: block;
 }
 
@@ -60,5 +60,6 @@ display: flex;
  }
 
  .flex > div{
-     flex: 1 1 200px ;
+     flex: 1 1 10px;
+     margin: 10px;
  }
