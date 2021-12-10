@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-/******/ (function() { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({});
 /************************************************************************/
@@ -45,46 +45,46 @@
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/ensure chunk */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		__webpack_require__.f = {};
 /******/ 		// This file contains only the entry chunk.
 /******/ 		// The chunk loading function for additional chunks
-/******/ 		__webpack_require__.e = function(chunkId) {
-/******/ 			return Promise.all(Object.keys(__webpack_require__.f).reduce(function(promises, key) {
+/******/ 		__webpack_require__.e = (chunkId) => {
+/******/ 			return Promise.all(Object.keys(__webpack_require__.f).reduce((promises, key) => {
 /******/ 				__webpack_require__.f[key](chunkId, promises);
 /******/ 				return promises;
 /******/ 			}, []));
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/get javascript chunk filename */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// This function allow to reference async chunks and sibling chunks for the entrypoint
-/******/ 		__webpack_require__.u = function(chunkId) {
+/******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/startup entrypoint */
-/******/ 	!function() {
-/******/ 		__webpack_require__.X = function(result, chunkIds, fn) {
+/******/ 	(() => {
+/******/ 		__webpack_require__.X = (result, chunkIds, fn) => {
 /******/ 			// arguments: chunkIds, moduleId are deprecated
 /******/ 			var moduleId = chunkIds;
-/******/ 			if(!fn) chunkIds = result, fn = function() { return __webpack_require__(__webpack_require__.s = moduleId); };
+/******/ 			if(!fn) chunkIds = result, fn = () => (__webpack_require__(__webpack_require__.s = moduleId));
 /******/ 			chunkIds.map(__webpack_require__.e, __webpack_require__)
 /******/ 			var r = fn();
 /******/ 			return r === undefined ? result : r;
 /******/ 		}
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/require chunk loading */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// no baseURI
 /******/ 		
 /******/ 		// object to store loaded chunks
@@ -95,7 +95,7 @@
 /******/ 		
 /******/ 		// no on chunks loaded
 /******/ 		
-/******/ 		var installChunk = function(chunk) {
+/******/ 		var installChunk = (chunk) => {
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids, runtime = chunk.runtime;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				if(__webpack_require__.o(moreModules, moduleId)) {
@@ -109,7 +109,7 @@
 /******/ 		};
 /******/ 		
 /******/ 		// require() chunk loading for javascript
-/******/ 		__webpack_require__.f.require = function(chunkId, promises) {
+/******/ 		__webpack_require__.f.require = (chunkId, promises) => {
 /******/ 			// "1" is the signal for "already loaded"
 /******/ 			if(!installedChunks[chunkId]) {
 /******/ 				if("webpack-runtime" != chunkId) {
@@ -124,7 +124,7 @@
 /******/ 		// no HMR
 /******/ 		
 /******/ 		// no HMR manifest
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 /******/ 	
