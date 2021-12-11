@@ -9,9 +9,9 @@ renderer.setSize(window.innerWidth,window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 var geometry= new THREE.BoxGeometry();
-var material = new THREE.MeshBasicMaterial({color: oxooffoo});
+var material = new THREE.MeshBasicMaterial({color: 0x00ff00});
 var cube = new THREE.Mesh(geometry.material);
-Scene.add(cube);
+scene.add(cube);
 
 camera.position.z = 5;
 renderer.render(scene.camera);
