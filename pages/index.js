@@ -5,11 +5,9 @@ function Home(){
     return (
     <div>
         <h1>Home</h1>
-        <Link href="/">
-            <a>Acessar página Three</a>
+        <Link href="/sobre">
+            <a>Acessar página Sobre</a>
         </Link>
-        <Link href="/pag"> </Link>
-
     </div>
     )
 
