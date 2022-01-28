@@ -1,8 +1,8 @@
- body, ul, li, p{
+ body, li, p{
     
    list-style: none;
    font-size: 1.2rem;
-   padding: 0px;
+   padding: 5.0px;
    margin: 0px;
  
 
@@ -21,9 +21,11 @@
 
 a{
 
-    text-decoration: none;
-    color: white;
+    list-style: none;
+    color: rgb(255, 255, 255);
 }
+
+
 
 .h1{
     text-align:center;
@@ -31,20 +33,20 @@ a{
 }
 
 img{
-    max-width: 50%;
-    display: block;
+    max-width: 30%;
+    display: table-footer-group;
 }
 
 
 
 .header{
 
-    background: rgb(176, 0, 211);
+    background: rgb(0, 0, 0);
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between ;
     align-items: center;
-    padding: 20px;
+    padding: 0.1px;
 }
 
 .menu{
@@ -61,6 +63,7 @@ img{
 .menu li a{
     display: block;
     padding: 10px;
+    color: rgb(235, 234, 241);
 
 }
 
