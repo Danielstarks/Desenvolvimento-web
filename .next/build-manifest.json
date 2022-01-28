@@ -11,7 +11,8 @@
   ],
   "lowPriorityFiles": [
     "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/development/_ssgManifest.js",
+    "static/development/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
@@ -29,14 +30,17 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/next/dist/pages/_error": [
+    "/sobre": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
+<<<<<<< HEAD
       "static/chunks/pages/next/dist/pages/_error.js"
     ],
     "/sobre": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
+=======
+>>>>>>> d405de0ec003cf422686f73f5d4b54b84b3a9776
       "static/chunks/pages/sobre.js"
     ]
   },
