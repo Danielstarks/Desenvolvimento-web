@@ -2,8 +2,8 @@
     
    list-style: none;
    font-size: 1.2rem;
-   padding: 5.0px;
-   margin: 0px;
+   padding: auto;
+   margin: auto;
  
 
     width: 100%;
@@ -27,50 +27,9 @@ a{
 
 
 
-.h1{
-    text-align:center;
-    margin-top: 100px;
-}
 
 img{
     max-width: 30%;
     display: table-footer-group;
 }
 
-
-
-.header{
-
-    background: rgb(0, 0, 0);
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between ;
-    align-items: center;
-    padding: 0.1px;
-}
-
-.menu{
-
- display: flex;
-
-
-}
-
-.menu li{
-    margin-left: 10px ;
-}
-
-.menu li a{
-    display: block;
-    padding: 10px;
-    color: rgb(235, 234, 241);
-
-}
-
-.flex{
-    display:flex;
-}
-
-.flex > div {
-    flex: 1 1 200px;
-}
