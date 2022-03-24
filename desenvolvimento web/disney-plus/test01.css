@@ -1,13 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+
 }
 
-.header{
 
-display: flex;
-flex-direction: row-reverse;
+body{
+background: url(".jpg") no-repeat center center;
 
 }
