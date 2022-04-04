@@ -169,7 +169,29 @@ letter-spacing: .05rem;
     background-image: url(img/drn.jpg);
     background-size: cover;
     margin: 10px 5%;
+    position: relative;
+    z-index: 1;
 }
+#services .services-item::after {
+    counter-reset: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .8;
+    z-index: -1;
+    
+
+}
+.service .col-rigth .icom {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+
+}
+
+
 @keyframes text_reveal_box {
 
     50% {
