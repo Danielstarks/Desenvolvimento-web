@@ -6,17 +6,16 @@
 }
 
 body {
-
+    height: 100%;
     width: 100%;
-    margin: auto;
     background-image: url(img/drn.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center center bottom;
+    background-color: black;
+  
 
 }
-
 
 
 
@@ -31,8 +30,9 @@ p {
 
 .conteiner {
     margin: 10px;
-    border-color: white;
-    background-color: rgba(0, 0, 0, 0.37);
+    padding: 10px;
+    border-color: rgba(17, 15, 15, 0);
+    background-color: rgba(0, 0, 0, 0.589);
     border-radius: 15px;
     border-style: dotted;
     border-width: medium;
