@@ -1,18 +1,25 @@
 const cursor = document.querySelector('.cursor');
 
-window.addEventListener('mousemove', (e) =>{
-    cursor.style.let = e.pageX + 'px';
+window.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.pageX + 'px';
     cursor.style.top = e.pageY + 'px';
-    console.setAttribute('data-fronTop', (cursor.offsetTop - scrollY))
+    console.setAttribute('data-fromTop', (cursor.offsetTop - scrollY))
 
 });
 
 window.addEventListener('scroll', () => {
-    const fronTop= parseInt(cursor.getAttribute('data-fronTop'));
-    cursor.style.top = scrollY + 'px';
-    console.log(scrolly) 
+    const fromTop = parseInt(cursor.getAttribute('data-fromTop'));
+    cursor.style.top = scrollY + fromTop +'px';
+    console.log(fromTop) 
 });
 
-window.addEventListener('click', ()=>{
+window.addEventListener('click', () => {
+if (cursor.classList.contains('click')){
+    cursor.classList.remove('click');
+
+    void cursor.offsetwidth;
+    cursor.classList.add('click')
+} else{
 cursor.classList.add('click')
+}
 });

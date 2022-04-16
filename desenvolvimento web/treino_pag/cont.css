@@ -1,73 +1,68 @@
-/* Select univers*/
 * {
-    margin: 0px;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-
-    font-family: sans-serif;
-
+    cursor: none;
 }
 
 body {
-    height: 100vh;
-    margin: 10px;
-    margin-top: 5%;
-    background-image: url(img/no_matches_by_lacza_dcbux4v.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: black;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    background-color: rgb(41, 42, 46);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
 }
 
-h1 {
-    margin-top: 5%;
-    text-align: center;
-    line-height: 1.5;
-}
-
-p {
-    margin-top: 55px;
-    text-align: center;
-}
-
-.cursor{
+.cursor {
     position: absolute;
     left: 0;
     top: 0;
     border: 1.5px solid white;
     width: 30px;
+    height: 30px;
     border-radius: 50px;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 
 }
-.cursor::after{
+
+.cursor::after,
+.cursor::before {
     content: '';
     position: absolute;
-    width: 5PX;
-    height: 5PX;
+    width: 10px;
+    height: 10px;
     left: 50%;
-    transform: translate(-50%, 50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 50px;
+}
+
+.cursor::before {
+    background-color: rgb(255, 255, 255);
 
 }
 
-.cursor::before{
-    background-color: red;
-    transform: translate(-50%, -50%) scale(3);
+.cursor.click::before {
+    animation: click .5s ease-in-out forwards;
 }
-.cursor::before{
-animation: click 1s ease-in-out forwards;
 
-}
-@keyframes clik{
-    0%{
+@keyframes click {
+
+    0% {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
-    100%{
+
+    100% {
         opacity: 0;
         transform: translate(-50%, -50%) scale(5);
-}
+    }
 }
