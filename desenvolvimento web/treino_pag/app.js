@@ -9,17 +9,17 @@ window.addEventListener('mousemove', (e) => {
 
 window.addEventListener('scroll', () => {
     const fromTop = parseInt(cursor.getAttribute('data-fromTop'));
-    cursor.style.top = scrollY + fromTop +'px';
-    console.log(fromTop) 
+    cursor.style.top = scrollY + fromTop + 'px';
+    console.log(fromTop)
 });
 
 window.addEventListener('click', () => {
-if (cursor.classList.contains('click')){
-    cursor.classList.remove('click');
+    if (cursor.classList.contains('click')) {
+        cursor.classList.remove('click');
 
-    void cursor.offsetwidth;
-    cursor.classList.add('click')
-} else{
-cursor.classList.add('click')
-}
-});
+        void cursor.offsetWidth;
+        cursor.classList.add('click');
+    } else {
+        cursor.classList.add('click')
+    }
+})

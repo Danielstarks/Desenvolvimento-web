@@ -16,14 +16,14 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: white 
 }
 
 .cursor {
     position: absolute;
     left: 0;
     top: 0;
-    border: 1.5px solid white;
+    /*border: 1.5px solid white;*/
     width: 30px;
     height: 30px;
     border-radius: 50px;
@@ -50,18 +50,18 @@ section {
 
 }
 
-.cursor.click::before {
+.cursor .click::before{
     animation: click .5s ease-in-out forwards;
 }
 
 @keyframes click {
 
-    0% {
+    0%{
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
 
-    100% {
+    100%{
         opacity: 0;
         transform: translate(-50%, -50%) scale(5);
     }
