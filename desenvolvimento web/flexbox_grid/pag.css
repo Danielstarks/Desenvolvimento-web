@@ -12,7 +12,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
 background-position: center center;
-background-color: rgba(18, 40, 139, 0.733);
+background-color: rgba(24, 38, 49, 0.733);
 }
 
 a{
@@ -36,7 +36,7 @@ img{
 }
 
 .header {
-    background: black;
+    background: rgb(25, 9, 90);
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -60,7 +60,7 @@ display: flex;
 .menu li a {
     display: block;
     padding: 5px;
-    background: rgb(126, 23, 243);
+    background: rgb(25, 9, 90);
 
 }
 /*CSS FLEXBOX */

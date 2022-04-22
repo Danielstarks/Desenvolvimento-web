@@ -1,10 +1,10 @@
 {
-  "name": "html",
+  "name": "HTM-5",
   "version": "1.0.0",
   "description": "CURSO HTML-5",
   "main": "index.js",
   "scripts": {
-    "dev": "netx dev"
+    "dev": "next dev"
   },
   "repository": {
     "type": "git",
