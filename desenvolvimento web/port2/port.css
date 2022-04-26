@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Serif:wght@200&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2? família= Montserrat:wght@100 & display=swap');
 
 * {
 
@@ -39,6 +39,21 @@ p {
     font-weight: 300px;
     letter-spacing: .05rem;
 }
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300px;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title span {
+    color: crimson;
+}
+
 
 #hero {
     background-image: url(img/fd.jpg);
@@ -145,20 +160,6 @@ p {
 
 }
 
-#services .section-title {
-    font-size: 4rem;
-    font-weight: 300px;
-    color: black;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-}
-
-#services .section-title span {
-    color: crimson;
-}
-
 #services .service-bottom {
     display: flex;
     align-items: center;
@@ -175,7 +176,7 @@ p {
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(img/drn.jpg);
+    background-image: url(img/thema.jpg);
     background-size: cover;
     margin: 10px 5%;
     position: relative;
@@ -216,6 +217,7 @@ p {
     font-size: 1.4rem;
     line-height: 1.9rem;
 }
+
 
 @keyframes text_reveal_box {
 
