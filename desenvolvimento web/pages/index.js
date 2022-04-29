@@ -1,5 +1,5 @@
-function Home(){
+function port2(){
     return <div>Home</div>
 }
 
-export default Home
+export default port2()
