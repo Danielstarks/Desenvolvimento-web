@@ -15,5 +15,5 @@ Para desenvolver esses projetos, útilizar as seguintes linguagens:
 + Logins;
 + Web sites;
 + Portfolio;
-+ Land page;
++ Landpage;
 + Animações;
