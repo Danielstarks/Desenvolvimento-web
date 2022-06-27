@@ -6,7 +6,7 @@
 Para desenvolver esses projetos, útilizar as seguintes linguagens:
 + HTML 5
 + CSS 3
-+ JAVASCRITP
++ JAVASCRIPT
 + GIT
 + SUGESTÃO DE IDE "VS CODE"
 
@@ -15,5 +15,5 @@ Para desenvolver esses projetos, útilizar as seguintes linguagens:
 + Logins;
 + Web sites;
 + Portfolio;
-+ Landpage;
++ Land page;
 + Animações;
