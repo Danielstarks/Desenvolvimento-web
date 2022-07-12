@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Tasks from './components/Tasks';
 import "./App.css";
 
@@ -17,11 +16,22 @@ const App = () => {
     },
   ]);
 
+  const handleTaskAddition = (taskTitle) => {
+    const newTasks = [
+      ... tasks, {
+        title: taskTitle,
+        id: Math.random(10),
+        completed: false,
+      },
+    ];
+    setTasks(newTasks);
+  };
+
   return (
     <>
       <div className="container">
         <AddTask />
-        <Tasks tasks={tasks}/>
+        <Tasks tasks={tasks} />
       </div>
     </>
   );
