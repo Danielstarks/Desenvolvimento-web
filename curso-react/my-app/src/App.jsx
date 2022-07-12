@@ -16,9 +16,11 @@ const App = () => {
       completed: true,
     },
   ]);
+
   return (
     <>
       <div className="container">
+        <AddTask />
         <Tasks tasks={tasks}/>
       </div>
     </>
