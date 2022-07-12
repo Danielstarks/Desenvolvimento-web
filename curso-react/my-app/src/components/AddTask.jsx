@@ -6,4 +6,4 @@ const AddTasks = () => {
      );
 }
  
-export default ;
+export default Tasks;
