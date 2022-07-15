@@ -16,3 +16,8 @@ body{
     background: radial-gradient(rgb(219, 194, 52),20%, rgb(247, 100, 2));
     position: relative;
 }
+
+.hero ul{
+    display: flex;
+    align-items: center;
+}
