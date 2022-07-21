@@ -1,5 +1,5 @@
-let tarefa =document.quarySeletor('#tarefa');
-let btnTarefa =document.quarySeletor('#btn-tarefa');
-let listaTarefa =document.quarySeletor('#listaTarefa');
+let tarefa =document.querySeletor('#tarefa');
+let btnTarefa =document.querySeletor('#btn-tarefa');
+let listaTarefa =document.querySeletor('#listaTarefa');
 
 
