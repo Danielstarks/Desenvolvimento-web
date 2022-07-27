@@ -6,7 +6,7 @@
     color: white;
 }
 body {
-    background: radial-gradient(rgb(28, 28, 196), 30%, black);
+    background: radial-gradient(rgba(180, 145, 48, 0.952),20%, rgba(241, 93, 6, 0.986));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
