@@ -15,4 +15,11 @@ function greetMe(nome){
     alert("Olá " + nome);
 }
 
-greetMe("mundo"); // " OLÁ MUNDO JAVASCRIPT"
+greetMe("mundo com javascript"); // " OLÁ MUNDO JAVASCRIPT"
+
+let idade = 5;
+console.log(idade);
+
+
+
+
