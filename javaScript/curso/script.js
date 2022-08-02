@@ -10,16 +10,64 @@ const: Declare uma constante de escopo de bloco, apenas de leitura.
  
 */
 
+// "FUNÇÃO"
+//=========================== 
 
-function greetMe(nome){
-    alert("Olá " + nome);
-}
+// function greetMe(nome){
+//     alert("Olá " + nome);
+// }
+// greetMe("mundo com javascript"); // " OLÁ MUNDO JAVASCRIPT"
 
-greetMe("mundo com javascript"); // " OLÁ MUNDO JAVASCRIPT"
+// "DECLARAÇÕES DE VARIAVEIS"
+//=============================
 
-let idade = 5;
-console.log(idade);
+// var idade = 25; // declarar variavel global;
+// console.log(idade); // buscar valor;
 
+// let idade = 25; // declarar variavel escopo de bloco;
+// console.log(idade); // buscar valor;
 
+// const estado = 'São Paulo'; // declarar valor fixo;
+// alert('estado'); // Mostrar em janela de alerta;
 
+// "OBJETO"
+//===============================
+
+// let idade = 25;
+// let sexo = 'Homem';
+
+// let pessoa = {
+//  idade: 25,
+//  sexo: 'Homem'
+// }; 
+
+// console.log(pessoa);
+
+// "ARRAYS"
+//===============================
+
+// let familia = [26, 50, 60, 44, 1, 5,];
+
+// console.log(familia[3]);
+
+// "TAREFA"
+//===============================
+
+// function dizerNome(){
+//     console.log('Daniel');
+// }
+
+// dizerNome();
+
+// "OBJETO"
+//===============================
+
+// "OBJETO"
+//===============================
+
+// "OBJETO"
+//===============================
+
+// "OBJETO"
+//===============================
 
