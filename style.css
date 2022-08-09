@@ -1,48 +1,68 @@
-
-*{
+* {
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-  
+    color: white;
+
 }
 
-body{
-    overflow-x: hidden;
+body {
+    background: url(https://i.pinimg.com/originals/4a/aa/de/4aaade9c445949aeb401a28deff935f1.gif);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: orange;
 }
 
 /*menu-bar*/
-.main-width{
+.main-width {
     width: 1400px;
     max-width: 95%;
     margin: 0 auto;
 }
-.hero{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: radial-gradient(rgba(180, 145, 48, 0.952),20%, rgba(241, 93, 6, 0.986));
+
+.hero {
     position: relative;
 }
-.hero header .logo h2 a{
+
+.hero header .logo h2 a {
     display: block;
     font-size: 32px;
     font-weight: 600;
     text-decoration: none;
     color: white;
 }
-.hero header{
+
+.hero header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 0 30px;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     display: inline-block;
     flex-wrap: wrap;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: white;
     margin-left: 60px;
@@ -51,34 +71,39 @@ nav ul li a{
     border-bottom: 2px solid transparent;
     transition: .4s;
 }
+
 nav ul li:not(:last-child) a:hover,
 nav ul li:not(:last-child) a:focus {
     border-bottom: 2px solid white;
 }
 
-nav ul li.active a { 
-    border-bottom:2px solid white; ;
+nav ul li.active a {
+    border-bottom: 2px solid white;
+    ;
 }
-nav ul li.btn a{
+
+nav ul li.btn a {
     background: transparent;
-    color:white;
+    color: white;
     border: 1px solid #f5dca8;
     padding: 9px 20px;
     border-radius: 30px;
     line-height: 1.4;
-    font-size:14px;
+    font-size: 14px;
     font-weight: 300;
     margin-left: 150px;
 }
-nav ul li.btn:hover a{
-border: 1px solid white;
-color: black;
-background: white;
-transition: .4s;
+
+nav ul li.btn:hover a {
+    border: 1px solid white;
+    color: black;
+    background: white;
+    transition: .4s;
 }
+
 @media screen and(max-width:768px) {
-       body{
-        max-width: 100vh; 
+    body {
+        max-width: 100vh;
         max-height: 100vh;
-       }
+    }
 }

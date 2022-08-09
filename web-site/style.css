@@ -6,8 +6,9 @@
     color: white;
 }
 body {
-    background: radial-gradient(rgba(180, 145, 48, 0.952),20%, rgba(241, 93, 6, 0.986));
-    background-repeat: no-repeat;
+    background: url(https://i.gifer.com/origin/e7/e7e91734f41de0b03f75dbce3ceab480.gif);
+    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
 }
 /*menu-bar*/
