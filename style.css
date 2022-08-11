@@ -79,7 +79,7 @@ nav ul li:not(:last-child) a:focus {
 
 nav ul li.active a {
     border-bottom: 2px solid white;
-    ;
+    
 }
 
 nav ul li.btn a {

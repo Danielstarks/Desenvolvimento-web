@@ -12,6 +12,58 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*Flex-menu*/
+.main{
+width: 1400px;
+max-width: 95%;
+margin: 0 auto;
+}
+.hero{
+position: relative
+}
+
+header .logo h2 a{
+display: block;
+text-decoration: none;
+font-size: 100px;
+font-weight: 400;
+color: white;
+}
+
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 30px;
+    
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    background: rgb(255, 153, 0);
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    color: white;
+    transition: .4s;
+}
+
+
+
+
+
+
+
+
+
+
 /*Flex*/
 .flex{
     display: flex;
