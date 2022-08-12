@@ -11,7 +11,9 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 /*menu-bar*/
+
 .main-width {
     width: 1400px;
     max-width: 95%;
