@@ -92,7 +92,7 @@ const: Declare uma constante de escopo de bloco, apenas de leitura.
 //Operador(&&) AND
 //Retorna true se os dois operadores forem true
 
-console.log(false && false);
+// console.log(false && false);
 
 //Operador(||) OU
 //Retorna true se um dos operadores forem true
@@ -141,3 +141,32 @@ console.log(false && false);
 
 //     default: console.log('Usuário não reconhecido!');
 // }
+
+// Laços de repetição:
+
+// 1. FOR
+
+//for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+// }
+
+// 2. WHILE
+
+//let i = 5;
+
+// while (i >= 1) {
+// if(i % 2 !== 0){
+// console.log(i);
+// }
+// i--;
+// }
+
+// 3. DO WHILE
+
+let i = 0;
+do{
+    console.log('digitado');
+    i++;
+} while (i < 10){
+    console.log(i);
+}
