@@ -1,13 +1,13 @@
 * {
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 
 }
 
-html,body {
+body {
     max-width: 100%;
     background: url(https://i.pinimg.com/originals/4a/aa/de/4aaade9c445949aeb401a28deff935f1.gif);
     background-attachment: fixed;
