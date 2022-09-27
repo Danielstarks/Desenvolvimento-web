@@ -8,9 +8,11 @@
 }
 
 body{
-    background: radial-gradient(rgb(6, 205, 255),50px,rgb(5, 83, 250)); background-attachment: fixed;
+    background: radial-gradient(rgb(6, 205, 255),50px,rgb(5, 83, 250)); 
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: calc(5px);
 }
 /*Flex-menu*/
 .main{
@@ -54,13 +56,6 @@ nav ul li a{
     color: white;
     transition: .4s;
 }
-
-
-
-
-
-
-
 
 
 
