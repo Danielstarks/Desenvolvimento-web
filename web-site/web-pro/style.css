@@ -2,68 +2,57 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    cursor: none;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
 }
+
+
+
+
 
 body{
-    overflow-x: hidden;
+  
+    background:linear-gradient(rgb(119, 0, 255),10rem, white);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
 
-section {
-    min-height: 100vh;
-    background-color: rgb(41, 42, 46);
-    width: 100%;
+/*menu bar*/
+.main{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.hero{
+    position: relative;
+}
+header .logo a{
+   display: block;
+   font-size: 100px;
+   font-weight: 600;
+   color: aqua;
+}
+
+.hero header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white 
+    justify-content: space-between;
 }
 
-
-.cursor {
-    position: absolute;
-    left: 0;
-    top: 0;
-    /*border: 1.5px solid white;*/
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-
+nav ul li {
+    display: inline-block;
+    flex-wrap: wrap;
 }
 
-.cursor::after,
-.cursor::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border-radius: 50px;
-}
-
-.cursor::before {
-    background-color: rgb(255, 255, 255);
-
-}
-
-.cursor .click::before{
-    animation: click .5s ease-in-out forwards;
-}
-
-@keyframes click {
-
-    0%{
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-    }
-
-    100%{
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(5);
-    }
+nav ul li a{
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 100;
+    border-bottom: 1px solid transparent;
+    color: white;
+    transition: .4s;
 }
