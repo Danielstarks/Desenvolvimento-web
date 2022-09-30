@@ -25,7 +25,7 @@ body {
     color: var(--text-color);
 }
 
-/*hearder */
+/*header */
 header {
     position: relative;
     width: 100%;
@@ -94,7 +94,7 @@ span {
     display: none;
 }
 
-/*hearder fin*/
+/*header fin*/
 
 /*Home*/
 section {
@@ -394,10 +394,11 @@ header.sticky {
     #menu-icon {
         display: block;
     }
-    .navbar{
-        position:absolute;
+
+    .navbar {
+        position: absolute;
         top: 100%;
-        right: 0;
+        right: -100%;
         width: 250px;
         height: 110vh;
         background: #fff;
@@ -406,5 +407,54 @@ header.sticky {
         align-items: center;
         padding: 180px 40px;
         transition: all .38 ease;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 1.3rem 0;
+    }
+
+    .navbar.open {
+        right: 0;
+    }
+}
+
+@media (max-width: 820px) {
+    :root {
+        --big-font: 3rem;
+        --h2-font: 1.8rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        height: 114vh;
+    }
+
+    .home-img {
+        text-align: center;
+    }
+
+    .home-img img {
+        height: auto;
+        max-width: 590px;
+        width: 100%;
+    }
+
+    .home-text {
+        padding-top: 50px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+    }
+    .about-img img {
+        height: auto;
+        max-width: 590px;
+        width: 100%;
     }
 }
