@@ -1,0 +1,29 @@
+body{
+    background: radial-gradient(red, 1px, blue,black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    width: 1400px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+    color: blueviolet;
+   
+}
+.home ul{
+    display:flex ;
+    gap: 5px;
+    list-style: none;
+    font-size: large;
+
+}
