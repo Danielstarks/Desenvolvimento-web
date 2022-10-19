@@ -152,9 +152,140 @@ section {
     border: 2px solid #ca7c62;
     color: #3e1908;
 }
+
 .btn2:hover {
     background: #ca7c62;
     color: #fff;
 }
 
 /*btn social*/
+
+.left {
+    position: absolute;
+    top: 50%;
+    padding: 0 5%;
+    transform: translateY(-50%);
+}
+
+.left i {
+    display: block;
+    margin: 28px 0;
+    color: #3e1908;
+    transition: all .40s ease;
+}
+
+.left i:hover {
+    transform: scale(1.1) translateX(-5px);
+}
+
+.right {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right a {
+    color: #ca7c62;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.right i {
+    color: #ca7c62;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+/*Resposive | header*/
+
+@media (max-width: 1470px) {
+    header {
+        padding: 15px 2%;
+        transition: .2s;
+    }
+
+    section {
+        padding: 0 2%;
+        transition: .2s;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        right: 2%;
+        transition: .2s;
+    }
+}
+
+/*main-text*/
+@media (max-width: 1000px) {
+    .main-text h1 {
+        font-size: 3.9rem;
+    }
+
+    .main-text h5 {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 11px 29px;
+        transition: .2s;
+    }
+}
+
+/*Menu*/
+
+@media (max-width: 975px) {
+    #menu-icon {
+        display: block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 35px;
+        background: #3e1908;
+        color: #fff;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+
+    .navlist {
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fbf6ef;
+        text-align: left;
+        transition: all .43s ease;
+    }
+
+    .navlist a {
+        font-size: 15px;
+        display: block;
+        padding: 0.5rem;
+        margin: 1.1rem;
+        border-bottom: none;
+        border-left: 2px solid #3e1908;
+    }
+
+    .navlist a:hover {
+        border-bottom: none;
+        background: #3e1908;
+        color: white;
+    }
+
+    .navlist.open {
+        top: 100%;
+    }
+}
