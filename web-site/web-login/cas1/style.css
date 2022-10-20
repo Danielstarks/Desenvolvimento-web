@@ -10,15 +10,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(24, 114, 248);
+    background: radial-gradient(blue,2px, white)
 }
-
 .login{
     width: 360px;
     height: min-content;
     padding: 20px;
     border-radius: 12px;
-    background: rgb(214, 215, 219);
+    background: rgb(252, 252, 252);
 }
 .login h1{
 
