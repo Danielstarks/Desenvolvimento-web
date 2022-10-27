@@ -1,0 +1,10 @@
+body{
+    background: radial-gradient(black,1px , blue);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+h1{
+    color: red;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "desenvolvimento-web",
+  "version": "1.0.0",
+  "description": "> Status: Desenvolvimento  ⚠️ ### Galeria de projetos para estudos em HTML | CSS | JAVASCRIPT. ## Requisitos Para desenvolver esses projetos, útilizar as seguintes linguagens: + HTML 5 + CSS 3 + JAVASCRIPT + GIT + SUGESTÃO DE IDE \"VS CODE\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danielstarks/Desenvolvimento-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danielstarks/Desenvolvimento-web/issues"
+  },
+  "homepage": "https://github.com/Danielstarks/Desenvolvimento-web#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

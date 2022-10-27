@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
-    color: rgb(247, 247, 247);
+    font-weight: 400;
+    color: white;
+
 }
 
 body{
@@ -14,6 +16,8 @@ body{
     background-size: cover;
     backdrop-filter: calc(5px);
 }
+
+
 /*Flex-menu*/
 .main{
 width: 1400px;
@@ -29,14 +33,14 @@ display: block;
 text-decoration: none;
 font-size: 100px;
 font-weight: 400;
-color: rgb(243, 10, 10);
+color: rgb(243, 150, 10);
 }
 
 .hero header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0 30px;
+    padding: 40px 30px;
     
 }
 
@@ -44,105 +48,55 @@ nav ul li {
     list-style: none;
     display: inline-block;
     flex-wrap: wrap;
-   
 }
 
 nav ul li a{
-    background: rgb(255, 153, 0);
+    padding: 5px 5px;
     text-decoration: none;
     margin-left: 15px;
     font-size: 30px;
     font-weight: 400;
     border-bottom: 2px solid transparent;
-    color: white;
+    color:white;
     transition: .4s;
 }
-
-
-
-/*Flex*/
-.flex{
-    display: flex;
+nav ul li a:hover{
+    color: rgb(245, 2, 253);
+    border-bottom: 2px solid rgb(102, 2, 89);
 }
 
-.flex-wrap{
-    flex-wrap: wrap;
+/* Flex */
+
+.flex {
+	display: flex;
 }
 
-.flex-item-1{
-    flex: 1;
+.flex-wrap {
+	flex-wrap: wrap;
 }
 
-/*flex Item*/
-
-.item{
-margin: 5px;
-background: tomato;
-text-align: center;
-font-size: 1.5rem;
+.flex-item-1 {
+	flex: 1;
 }
 
-.container{
-    max-width: 400px;
-    margin: 0 auto;
-    border: 1px solid #ffffff;
+/* Flex Item */
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
 }
 
-h1{
-    text-align: center;
-    margin: 20px 0 0 0;
-    font-size: 1.25em;
-    font-weight: normal;
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
 }
 
-/*flex-direction: row-reverse*/
-
-.row{
-    flex-direction: row;
-}
-.row-reverse{
-    flex-direction: row-reverse;
-}
-.column{
-    flex-direction: column;
-}
-.column-reverse{
-    flex-direction: column-reverse;
+h1 {
+	text-align: center;
+	margin: 15px;
+	font-size: 1.25em;
+	font-weight: normal;
 }
 
-.container-flex{
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    border: 1px solid #ffffff;
-}
-
-
-/*flex Item*/
-
-.items{
-
-    flex: 1;
-    margin: 5px;
-    background: rgb(255, 153, 0);
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-
-#item-list {
-    background: rgba(128, 128, 128, 0.247);
-    padding: 15px;
-    margin: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    border: none;
-    outline: none;
-    color: white;
-}
-
-#item-list h1{
-text-align: center;
-}
