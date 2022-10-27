@@ -1,12 +1,23 @@
   .container {
       text-align: center;
+      color: white;
   }
 
   button {
-      background: blue;
+      background: transparent;
       color: white;
-      font-size: 32px;
-      padding: 8px 20px;
+      font-size: 20px;
+      padding: 8px  20px;
       cursor: pointer;
-      border: 0;
+      border: 1px solid white;
+      border-radius: 35px;
+  }
+  button:hover{
+background: rgba(4, 209, 245, 0.637);
+  }
+  body{
+    background: radial-gradient(rgb(7, 219, 78), 1rem, rgb(0, 109, 128));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
