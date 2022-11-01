@@ -6,8 +6,8 @@
     font-family: monospace;
     font-weight: 400;
     color: white;
-
-}
+    
+}    
 
 body{
     background: radial-gradient(rgb(6, 205, 255),50px,rgb(5, 83, 250)); 
@@ -15,21 +15,41 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: calc(5px);
+}    
+.item {
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
 }
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
 
 
 /*Flex-menu*/
 .main{
-width: 1400px;
+width: 1400px;    
 max-width: 95%;
 margin: 0 auto;
 }
 .hero{
-position: relative
+position: relative    
 }
 
 header .logo h2 a{
-display: block;
+display: block;    
 text-decoration: none;
 font-size: 100px;
 font-weight: 400;
@@ -42,13 +62,13 @@ color: rgb(243, 150, 10);
     justify-content: space-between;
     padding: 40px 30px;
     
-}
+}    
 
 nav ul li {
     list-style: none;
     display: inline-block;
     flex-wrap: wrap;
-}
+}    
 
 nav ul li a{
     padding: 5px 5px;
@@ -59,44 +79,52 @@ nav ul li a{
     border-bottom: 2px solid transparent;
     color:white;
     transition: .4s;
-}
+}    
 nav ul li a:hover{
     color: rgb(245, 2, 253);
     border-bottom: 2px solid rgb(102, 2, 89);
-}
+}    
 
 /* Flex */
 
 .flex {
 	display: flex;
-}
+}  
+.flex-wrap{
+    flex-wrap: nowrap;
+}  
 
 .flex-wrap {
 	flex-wrap: wrap;
-}
+}    
 
 .flex-item-1 {
 	flex: 1;
-}
+}    
 
 /* Flex Item */
-.item {
-	margin: 5px;
-	background: tomato;
-	text-align: center;
-	font-size: 1.5em;
+
+.row .rw{
+    display: flex;
+    flex-direction: row;
 }
 
-.container {
-	max-width: 400px;
-	margin: 0 auto;
-	border: 1px solid #ccc;
+.row-reverse .rs{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-h1 {
-	text-align: center;
-	margin: 15px;
-	font-size: 1.25em;
-	font-weight: normal;
+.column .cl{
+display: flex;
+flex-direction: column;
+}
+.column-reverse {
+display: flex;
+flex-direction: column-reverse;
 }
 
+/* Flex aline-items*/
+
+.stretch{
+    align-items: stretch;
+}

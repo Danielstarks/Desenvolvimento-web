@@ -80,7 +80,7 @@
 
 .container-4 {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     flex-wrap: wrap;
 
 }
@@ -100,15 +100,73 @@
     background: pink;
 }
 
-nav ul{
+/*flex-item wrap*/
+.container-5{
     display: flex;
-    list-style: none;
+    max-width: 500px;
 }
-nav ul li{
-    width: 300px;
+
+.items-5{
+    display: flex;
+    flex-flow: row nowrap;
+    border: 1px solid white;
+}
+
+.item-5{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 90px;
+    background: rebeccapurple;
+}
+
+/*flex-item wrap*/
+
+.container-6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items-6{
+    display: flex;
+    border: 1px solid white;
+
+}
+
+.item-6 {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 90px;
+    background: rgb(0, 162, 255);
+}
+.flex{
+    width: 400px;
     height: 300px;
+    background: #ccc;
+    display: flex;
+    margin: 0 auto;
+}
+.flex1{
+    width: 400px;
+    height: 300px;
+    background: #ccc;
+    display: flex;
+    float: left;
 }
 
+.flex2{
+    width: 400px;
+    height: 300px;
+    background: #ccc;
+    display: flex;
+    float: right;
 
+}
+.flex3{
 
-/*flex-item column-reverse*/
+    width: 800px;
+    height: 400px;
+    display: flex;
+    background: #ccc;
+}
