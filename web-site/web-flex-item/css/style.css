@@ -1,21 +1,21 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
     font-weight: 400;
     color: white;
-    
-}    
 
-body{
-    background: radial-gradient(rgb(6, 205, 255),50px,rgb(5, 83, 250)); 
+}
+
+body {
+    background: radial-gradient(rgb(6, 205, 255), 50px, rgb(5, 83, 250));
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: calc(5px);
-}    
+}
+
 .item {
     margin: 5px;
     background: tomato;
@@ -39,92 +39,141 @@ h1 {
 
 
 /*Flex-menu*/
-.main{
-width: 1400px;    
-max-width: 95%;
-margin: 0 auto;
-}
-.hero{
-position: relative    
+.main {
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
 }
 
-header .logo h2 a{
-display: block;    
-text-decoration: none;
-font-size: 100px;
-font-weight: 400;
-color: rgb(243, 150, 10);
+.hero {
+    position: relative
 }
 
-.hero header{
+header .logo h2 a {
+    display: block;
+    text-decoration: none;
+    font-size: 100px;
+    font-weight: 400;
+    color: rgb(243, 150, 10);
+}
+
+.hero header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 30px;
-    
-}    
+
+}
 
 nav ul li {
     list-style: none;
     display: inline-block;
     flex-wrap: wrap;
-}    
+}
 
-nav ul li a{
+nav ul li a {
     padding: 5px 5px;
     text-decoration: none;
     margin-left: 15px;
     font-size: 30px;
     font-weight: 400;
     border-bottom: 2px solid transparent;
-    color:white;
+    color: white;
     transition: .4s;
-}    
-nav ul li a:hover{
+}
+
+nav ul li a:hover {
     color: rgb(245, 2, 253);
     border-bottom: 2px solid rgb(102, 2, 89);
-}    
+}
 
 /* Flex */
 
 .flex {
-	display: flex;
-}  
-.flex-wrap{
-    flex-wrap: nowrap;
-}  
+    display: flex;
+}
 
 .flex-wrap {
-	flex-wrap: wrap;
-}    
+    flex-wrap: nowrap;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
 
 .flex-item-1 {
-	flex: 1;
-}    
+    flex: 1;
+}
 
 /* Flex Item */
 
-.row .rw{
+.row .rw {
     display: flex;
     flex-direction: row;
 }
 
-.row-reverse .rs{
+.row-reverse .rs {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.column .cl{
-display: flex;
-flex-direction: column;
+.column .cl {
+    display: flex;
+    flex-direction: column;
 }
+
 .column-reverse {
-display: flex;
-flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 /* Flex aline-items*/
 
-.stretch{
+.stretch {
+    width: 400px;
+    display: flex;
+    border: 1px solid white;
+    margin: 0 auto;
     align-items: stretch;
+}
+
+.st{
+    align-items: stretch;
+}
+
+/* Flex grow*/
+
+.flex-grow {
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.fg-1 {
+   
+    flex-grow: 1;
+}
+
+.fg-2{
+    flex-grow: 2;
+}
+.fg-3{
+    flex-grow: 3;
+}
+
+/* Flex basis*/
+
+.flex-basis{
+display: flex;
+width: 400px;
+margin: 0 auto;
+border: 1px solid white;
+}
+.fs{
+    flex-basis: 100px;
+}
+
+.fs-1{
+flex-basis: 0;
 }

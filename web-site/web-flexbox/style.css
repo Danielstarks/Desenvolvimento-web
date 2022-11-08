@@ -2,16 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     color: white;
 }
 
 body {
-
     overflow-x: hidden;
-
-    background: rgb(0, 110, 255);
-
+    background: url(/web-site/img/fd.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .main {
@@ -20,18 +21,7 @@ body {
     margin: 0 auto;
 }
 
-.hero {
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: url(/web-site/flexbox_grid/teste01/img/fd.jpeg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.hero header .logo h1 a {
+.menu header .logo h1 a {
     display: block;
     font-size: 32px;
     font-weight: none600;
@@ -39,7 +29,7 @@ body {
     color: white;
 }
 
-.hero header {
+.menu header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,8 +81,38 @@ h2 {
 .container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    flex-wrap: wrap;
+    min-width: 800px;
+    height: 400px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    line-height: 90px;
+    border: 1px solid rgb(4, 184, 255);
+    background: rgba(44, 44, 44, 0.438);
+    color: white;
+}
+
+iframe{
+    background: url(/web-site/web-food/img/home.png);
+   background-size: contain;
+    
+}
+.button a{
+   padding: 15px 30px;
+   background: transparent;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 10px;
  
-
-    background-color: rgba(245, 245, 220, 0.226);
-
 }
