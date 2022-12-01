@@ -1,12 +1,13 @@
 //Nota aluno
 
 
-const array = [70, 70, 80];
+const array = [60, 100, 80];
 
 console.log(mediaDoAluno(array));
 
 function mediaDoAluno(notas) {
-    const valor = calcularMedia(notas);
+    const media = calcularMedia(notas);
+
    /* let soma = 0;
     for (let nota of notas) {
         soma += nota
@@ -19,14 +20,15 @@ function mediaDoAluno(notas) {
     if (media < 89) return 'B';
     return 'A'
 
-
 }
 
 function calcularMedia(array){
+
     let soma = 0;
-    for (let valor of notas) {
+
+    for (let valor of array) {
         soma += valor
     }
-    const media = soma / (notas.length);
+    return soma/(array.length);
     
 }
