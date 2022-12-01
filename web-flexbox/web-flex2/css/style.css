@@ -177,3 +177,23 @@ border: 1px solid white;
 .fs-1{
 flex-basis: 0;
 }
+
+/* Flex basis*/
+
+.flex-shrink{
+    display: flex;
+    border: 1px solid white;
+    max-width: 350px;
+}
+
+.item{
+    background: grey;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+}
+
+.fk{
+flex-shrink: 1;
+flex-grow: 1;
+}
