@@ -8,7 +8,7 @@ Para desenvolver esses projetos, útilizar as seguintes linguagens:
 + CSS 3
 + JAVASCRIPT
 + GIT
-+ SUGESTÃO DE IDE "VS CODE"
+
 
 
 ## PROJETOS
