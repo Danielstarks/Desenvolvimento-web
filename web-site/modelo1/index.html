@@ -1,76 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive headphones Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
 </head>
 
 <body>
+    <!-------------- Header Designer ------------------>
+
     <header>
-        <div class="container-header">
-            <div class="logo">Logo</div>
-            <nav>
-                <ul>
-                    <li><a href="#">icon</a></li>
-                    <li><a href="#">icon</a></li>
-                    <li><a href="#">icon</a></li>
-                    <li><a href="#">icon</a></li>
-                    <li><a href="#">icon</a></li>
-                </ul>
-                <div class="head-text">
-                    <h5>subtitulo</h5>
-                    <h1>Titulo</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet reprehenderit dolore natus non ad
-                        ipsam unde incidunt? Quisquam illum ipsum perspiciatis, debitis voluptatibus accusantium
-                        consectetur neque delectus, laudantium, nesciunt accusamus.</p>
-                    <a href="#">button</a>
-                </div>
-            </nav>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>SoundBox</a>
+
+        <ul class="navbar">
+            <li><a href="#" class="active">Overview</a></li>
+            <li><a href="#">Tech Specs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i class="bx bx-cart"></i>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
         </div>
     </header>
-    <section class="main">
-        <div class="container-main">
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, eveniet amet, iure consequatur nobis
-                similique veritatis dicta expedita quae eligendi, iste cupiditate reprehenderit officiis perspiciatis!
-                Officia eius tempora natus et!</p>
-            <a href="#">button</a>
-            <a href="#">button</a>
-            <a href="#">button</a>
-        </div>
-    </section>
-    <section class="content">
-        <div class="content-text">
-            <h5>sub</h5>
-            <h1>Titulo</h1>
+    <!-------------- Home Designer ------------------>
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et atque quibusdam harum nobis debitis modi
-                obcaecati iure accusamus corporis, vitae voluptates similique explicabo. Libero nemo ducimus repellendus
-                vitae laboriosam veniam!</p>
-            <a href="#">button</a>
-        </div>
-    </section>
-    <section class="footer">
-        <h1>Titulo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et atque quibusdam harum nobis debitis modi
-            obcaecati iure accusamus corporis, vitae voluptates similique explicabo. Libero nemo ducimus repellendus
-            vitae laboriosam veniam!</p>
-        <div>
-            <input type="text">
-            <input type="email">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+    <section class="home">
+        <div class="home-img">
+            <img src="img/product1.png" class="one">
         </div>
 
-        <a href="#">button</a>
-        <a href="#">button</a>
-        <a href="#">button</a>
+        <div class="home-text">
+            <h1>Wireless <br> Headphones</h1>
+            <h5>The smarter way to listen</h5>
+            <h3>$199.99</h3>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
     </section>
-    <script src="" async defer></script>
+
+    <div class="main">
+
+        <div class="row">
+            <li><img src="img/main1.png" onclick="slider('img/product1.png')"></li>
+        </div>
+        <div class="row row2">
+            <li><img src="img/main2.png" onclick="slider('img/product2.png')"></li>
+        </div>
+        <div class="row row3">
+            <li><img src="img/main3.png" onclick="slider('img/product3.png')"></li>
+        </div>
+    </div>
+
+    <a href="#" class="button">Scroll Down<i class='bx bxs-chevrons-down'></i></a>
+
+    <script type="text/javascript">
+        function slider(anything) {
+
+            document.querySelector('.one').src = anything;
+        }
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
 </body>
 
 </html>
