@@ -1,12 +1,78 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+
+}
+/* ===================== header ============================== */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    transition: all .55s ease;
+    background: transparent;
 }
 
-.logo .nav-item{
-    padding: 10px;
+.logo{
     display: flex;
-   float: left;
+    align-items: center;
+    border: 1px solid rgb(0, 170, 248);
+    border-radius: 15px;
+    color:  rgb(0, 170, 248);
+    padding: 12px;
+    font-family: monospace, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo i{
+    color: rgb(0, 170, 248);
+    font-size: 45px;
+    text-align: center;
+    margin: 10px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color:rgb(0, 170, 248);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 30px;
+    padding: 10px;
+    border-radius: 15px ;
+    transition: all .55s ease;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:rgb(0, 219, 248);
+    transition: all .25s ease;
+    border: 2px solid rgb(0, 219, 248);
+    border-radius: 15px ;
+    
+}
+
+/* ===================== home ============================== */
+
+img{
+    display: block;
+    width: 100%;
+}
+
+section .home{
+    background: url(img/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }

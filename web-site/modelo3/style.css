@@ -1,0 +1,26 @@
+html,
+body {
+    background: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* carousel */
+
+.container-carousel {
+    width: 100%;
+    align-items: center;
+}
+
+/* pages */
+
+.container-page {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* cards */
+

@@ -81,10 +81,7 @@ header {
 }
 
 #menu-icon {
-    font-size: 35px;
-    color: var(--text-color);
-    z-index: 1000;
-    cursor: pointer;
+    display: none;
 }
 
 .header-icons i {
@@ -355,6 +352,13 @@ section {
     .navbar.open {
         right: 2%;
     }
+     #menu-icon{
+    display: block;
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1000;
+    cursor: pointer;
+    }
 }
 
 @media (max-width: 600px) {
@@ -374,5 +378,13 @@ section {
 
     :root {
         --h1-font: 2.1rem;
+    }
+
+    #menu-icon{
+    display: block;
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1000;
+    cursor: pointer;
     }
 }
