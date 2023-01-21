@@ -59,13 +59,12 @@ body {
 }
 /* ============== cards ============ */
 .container {
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 2rem;
     display: flex;
     border: 1px solid white;
     border-radius: 10px;
-
 }
 
 .cards {
@@ -76,10 +75,18 @@ body {
     width: 400px;
     height: 200px;
     flex: 1;
-    margin: 5px;
-    background: rgba(128, 128, 128, 0.678);
+    margin: 15px;
+    background: rgb(255, 77, 0);
     text-align: center;
     border-radius: 10px;
     font-size: 1.5rem;
 
+}
+
+.item a{
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    border: 1px solid rgba(255, 255, 255, 0.384) ;
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0);
 }
